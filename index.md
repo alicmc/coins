@@ -6,8 +6,8 @@
 2.  Use an image processing software to convert the images to black and white and increase the contrast.
     - In Krita apply a desaturate filter
     - Apply a auto-contrast filter and then adjust levels.
-3.  Upload images to create depth maps
-    - url: https://huggingface.co/spaces/depth-anything/Depth-Anything-V2
+3.  Upload images to generate depth maps, download the grayscale version
+    - [url](https://huggingface.co/spaces/depth-anything/Depth-Anything-V2)
 
 ## II. Prepare the coin faces
 
