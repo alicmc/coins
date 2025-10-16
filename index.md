@@ -1,8 +1,14 @@
 # Coin Making Instructions
 
+## Video Tutorial
+
+I recommend following the video and then using the text guide as a reference afterwards
+
+- [url](https://www.youtube.com/watch?v=YPCayoD0kpw)
+
 ## I. Prepare the coin depth maps
 
-1.  Downlaod the items from the Lisanby museum site.
+1.  Download the items from the Lisanby museum site.
 2.  Use an image processing software to convert the images to black and white and increase the contrast.
     - In Krita apply a desaturate filter
     - Apply a auto-contrast filter and then adjust levels.
@@ -11,7 +17,9 @@
 
 ## II. Prepare the coin faces
 
-1. Add a plane in blender (Shift+A in object mode)
+1. Add a plane mesh in blender
+   - press Shift+A in object mode
+   - look under Mesh dropdown
 2. Subdivide the plane to create more geometry
    - Tab then right click on plane after it's selected
    - Increase number of cuts in bottom left corner menu to 30
@@ -32,3 +40,4 @@ Make another plane, press G then X to move it, and then repeat these steps.
 
 1. Select one face and press R X 180 to flip it over and R Z 180 to rotate it the right way
 2. Align the plane by pressing G and then an axis (X Y or Z)
+   - this allows you to move the plane over and make sure that they're aligned
