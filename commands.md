@@ -20,6 +20,7 @@ This guide covers essential Blender shortcuts and tools specifically useful for 
 - to move camera freely using WASD, press Shift+`
   - press Enter to save camera location, Esc to go back to old location
   - press 0 on numpad to reset camera to initial location
+  - if the camera is moving too fast for you, change the movement speed in settings (look this up)
 
 ---
 

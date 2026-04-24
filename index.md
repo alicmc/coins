@@ -6,17 +6,20 @@
 
 ## Preface
 
-I recommend following the video I made and then using the text guide as a reference afterwards
+Hello! This is an experimental guide to make 3D coin objects out of 2D images.
+This guide might be difficult to follow if you don't have previous experience in Blender or CAD.
 
-[YouTube Tutorial](https://www.youtube.com/watch?v=YPCayoD0kpw)
-
-Here's the youtube video I based my work on
-
+You should do this basic 2-minute tutorial first to understand the basics of what this guide is doing.
 [2 minute blender guide](https://www.youtube.com/watch?v=j9hyjPcXYjc&list=PLtDW27ea6SCrW8EkLgw7huht7aDkYytkX&index=3)
+
+The Blender commands quick reference can be help if you forget any commands.
+
+Here's the youtube video I made on how to create the coin models. Feel free to either follow along with this or the text guide.
+[YouTube Tutorial](https://www.youtube.com/watch?v=YPCayoD0kpw)
 
 Parts II-III of the coin making tutorial can be skipped by creating a copy of a coin face file and then swapping out the texture of the displacement map.
 
-Everything in this guide is experimental so play around with it.
+Everything in this guide is experimental so play around and have fun!!
 
 ## Prereqs
 

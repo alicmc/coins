@@ -1,17 +1,28 @@
 # How to make a coin in Blender
 
-## I. Prepare the coin depth maps
+### Notes
 
-1.  Download the items from the [Lisanby museum site](https://jmu.emuseum.com/collections)
+In the OneDrive folder each subfolder should correlate with an object in the MAC
 
-2.  Use an image processing software to convert the images to black and white and increase the contrast
+Step I in this guide is mandatory
+
+You can then skip to step IV in this guide by going into one of the subfolders and making a copy of one of the coin face blender files
+
+(the coin faces should be named something like 2024.2.58-obv.blend)
+
+## I. Prepare the coin image files
+
+1.  Download your coin face images from the [Lisanby museum site](https://jmu.emuseum.com/collections)
+
+2.  (OPTIONAL) Use an image processing software to convert the images to black and white and increase the contrast
     - In Krita apply a desaturate filter
     - Apply a auto-contrast filter and then adjust levels
-    - (Optional) Remove background and make it black. I think this gets better results
-    - If the coin is touching the edges of the image you should move it to the center
-    - Having a white background helps better than a black one
-3.  Upload images to monocular vision model to generate depth maps, download the grayscale version
-    - [monocular vision model](https://huggingface.co/spaces/depth-anything/Depth-Anything-V2)
+3.  (OPTIONAL) Use the contiguous selection tool (magic wand) to remove the background
+    - If the coin is at all touching the edges of the image you should do this step and move it to the center
+    - When exporting the image, set the transparent channel to be white (look this up if you don't know how)
+4.  Upload the images to the Depth Anything model and generate depth maps of the images, download the grayscale version
+    - [Depth Anything](https://huggingface.co/spaces/depth-anything/Depth-Anything-V2)
+    - this model estimates the depth of everything in the image. It's used for autonomous robots :)
 
 ## II. Prepare the coin faces
 
@@ -35,7 +46,8 @@
    - Since it's getting 3d printed it will get smoothed out a bit anyways
 
 Should look something like this
-![alt text](image-2.png)
+
+- ![alt text](image-2.png)
 
 ## III. Turning it 3D
 
@@ -65,7 +77,7 @@ Should look something like this
    - File > Export > STL
    - This makes the geometry simpler for when we're stitching the two sides together
 
-_Congrats you have finished a coin face!_
+_Congrats you have finished your first coin face!_
 
 ## IV. Making a Second Face
 
@@ -80,3 +92,31 @@ _Congrats you have finished a coin face!_
    - ![alt text](image-4.png)
 5. Make the cylinder visible so that it encapsulates the coin face but not any of the weird icky bits
 6. Add the boolean modifier again
+7. Export as STL
+   - File > Export > STL
+
+### _Optional_ Clean up Step
+
+Sometimes there might be some weird geometry due to the experimental natural of this guide
+
+Here are the steps I suggest:
+
+1. after exporting the coin face as an STL, make a new blank blender file and then import your new STL
+   - this seems redundant but actually makes your life way easier because of how blender works sorry
+2. Go into edit mode and make sure you have a good view of the geometry you want to delete
+   - press `Tab` to move into edit mode
+   - The movement commands found in the Blender commands quick reference tab can be helpful to adjust your POV try to have the weird geometry against the blank background (nothing behind it)
+     - don't try to delete anything weird that's on the inside or bottom of the coin it's not worth trust
+3. Select and delete the geometry
+   - use your mouse cursor and select the geometry
+     - there are various selection modes you can choose from the left hand toolbar (look this up)
+   - press `Delete` on your keyboard then select `Vertices`
+   - ![Blender Demo](assets/clean_up_step.gif)
+4. Press `Tab` to go back to object mode
+
+## V. Combine the faces
+
+1. Make a new blender file
+2. import the stls of both the obverse and the reverse
+3. select one face and then flip it over
+   - Press `R` then `X` then type in 180 and press `Enter`
