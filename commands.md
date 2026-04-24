@@ -17,6 +17,10 @@ This guide covers essential Blender shortcuts and tools specifically useful for 
 | Numpad `5`   | Perspective Toggle | Switch perspective/orthographic |
 | `.` (Period) | Focus Selected     | Zoom to selected object         |
 
+- to move camera freely using WASD, press Shift+`
+  - press Enter to save camera location, Esc to go back to old location
+  - press 0 on numpad to reset camera to initial location
+
 ---
 
 ## Object Mode
