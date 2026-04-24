@@ -1,8 +1,10 @@
 # Coin Making Instructions
 
-- using 55 mm for coin size
+[Coin Making Instructions](coin_instructions.md) | [Die Making Instructions](die_instructions.md) | [Blender Commands Cheat Sheet](commands.md)
 
-[Blender Commands Cheat Sheet](commands.md)
+---
+
+- using 55 mm for coin size
 
 ## Link to the OneDrive containing all coin files
 
