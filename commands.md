@@ -92,6 +92,7 @@ This guide covers essential Blender shortcuts and tools specifically useful for 
 - Always **apply scale** before exporting
 - Keep models **watertight (no holes)**
 - Avoid **non-manifold geometry**
+  - this is best practice but unfortunately it's unavoidable in this guide
 - Use **real-world units (millimeters recommended)**  
   → Set in _Scene Properties → Units_
 
@@ -99,20 +100,7 @@ This guide covers essential Blender shortcuts and tools specifically useful for 
 
 ## Export for Printing
 
-| Format | When to Use   |
-| ------ | ------------- |
-| STL    | Most common   |
-| OBJ    | If multi-part |
-
 **Export Path:**  
 `File → Export → STL`
-
----
-
-## Pro Tips
-
-- Use **orthographic view (Numpad 5)** for accurate alignment
-- Model with the **grid as your reference**
-- Keep geometry **simple and clean** to avoid slicer errors
 
 ---

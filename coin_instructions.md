@@ -1,6 +1,6 @@
 # How to make a coin in Blender
 
-### Notes
+### Preface
 
 In the OneDrive folder each subfolder should correlate with an object in the MAC
 
@@ -47,7 +47,7 @@ You can then skip to step IV in this guide by going into one of the subfolders a
 
 Should look something like this
 
-- ![alt text](image-2.png)
+- ![Blender Modifier Menu](image-2.png)
 
 ## III. Turning it 3D
 
@@ -64,13 +64,13 @@ Should look something like this
    - Make it overlap completely with the coin face, but not with the ugly bits at the bottom
    - Diameter should be slightly bigger than the coin
    - should look something like this
-   - ![alt text](image.png)
+   - ![Cylinder positioning for coin](image.png)
 5. Apply a Boolean modifier on the plane mesh
    - select intersect and manifold solver
    - select the cylinder mesh under object
-   - ![alt text](image-1.png)
+   - ![Boolean Modifier Settings](image-1.png)
 6. Make the cylinder invisible by clicking on the eye symbol in the top right menu
-   - ![alt text](image-5.png)
+   - ![Mesh visibilities](image-5.png)
    - if all goes well, you should be left with the coin face
    - if there are fragments or weird geometry, you should maybe move the cylinder so its just the coin
 7. Export as STL
@@ -87,9 +87,9 @@ _Congrats you have finished your first coin face!_
    - trust me it will make your life easier if you just redo it later
 4. Find the Displace modifier and swap out the old depth map for the new depth map
    - click on the rightmost icon next to the texture name
-   - ![alt text](image-3.png)
+   - ![Displacement Modifier Settings](image-3.png)
    - Right under settings there a filename and a picture icon. Click on the file icon to put in your new depth map file
-   - ![alt text](image-4.png)
+   - ![Changing image for displacement modifier](image-4.png)
 5. Make the cylinder visible so that it encapsulates the coin face but not any of the weird icky bits
 6. Add the boolean modifier again
 7. Export as STL
@@ -111,7 +111,7 @@ Here are the steps I suggest:
    - use your mouse cursor and select the geometry
      - there are various selection modes you can choose from the left hand toolbar (look this up)
    - press `Delete` on your keyboard then select `Vertices`
-   - ![Blender Demo](assets/clean_up_step.gif)
+   - ![Geometry Cleanup Demo](assets/clean_up_step.gif)
 4. Press `Tab` to go back to object mode
 
 ## V. Combine the faces
@@ -120,3 +120,30 @@ Here are the steps I suggest:
 2. import the stls of both the obverse and the reverse
 3. select one face and then flip it over
    - Press `R` then `X` then type in 180 and press `Enter`
+   - If the faces don't look perfectly aligned, feel free to use Rotate (`R`) or Grab (`G`) to align them
+4. Press `G` then `Z` to create some distance between the planes
+   - ![The two coin faces facing away from each other](image-6.png)
+5. Snap the planes together
+   - Click on the little magnet icon at the top of the screen
+   - ![Snap Icon](image-7.png)
+   - Click on the neighboring button to the right to bring up the snap settings, and select face for the snap target
+   - ![Snap Settings](image-8.png)
+   - Select one of the planes, press `G` then `Z` and move the plane until it snaps to be flush with the other one
+6. Join the planes together
+   - Select them both then press `Ctrl + J`
+
+### Congrats you're basically done :)
+
+You can now export your final mesh as an STL!
+
+## VI. Printing the STL
+
+There might be some issues if you try to 3D print the object since it will probably be non manifold.
+
+My video guide contains stragies to minimize this risk at around `18:00`
+
+Some 3D printer softwares, such as Cura, will also have options to fix the mesh (filling holes)
+
+To get the greatest amount of detail out of your print, try to print it at a 45° angle
+
+I would also reccomend using a raft with tree supports for the plat adhesion

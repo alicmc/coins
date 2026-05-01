@@ -1,5 +1,7 @@
 # Coin Modeling Homepage
 
+---
+
 [Coin Making Instructions](coin_instructions.md) | [Die Making Instructions](die_instructions.md) | [Blender Commands Cheat Sheet](commands.md)
 
 ---
